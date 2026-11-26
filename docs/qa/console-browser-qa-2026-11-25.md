@@ -6,7 +6,16 @@
 
 ## Executive summary
 
-Four issues were found: **two high**, **two medium**. No browser console errors were observed during page load or the exercised interactions.
+Four issues were found: **two high**, **two medium**. No browser console errors were observed during the exercised interactions.
+
+## Resolution
+
+Implemented and browser-retested on `fix/design-console-qa`:
+
+- Invalid dry-vehicle values now preserve the last valid model value, announce a validation error, and change the status to `Needs valid input`.
+- Navigation now exposes the selected section through `aria-current`, scrolls to the named workspace section, and includes a Build package target.
+- Export now produces an `epm-20-review-brief.md` download and announces completion.
+- The responsive layout now fits a 360 px viewport without page-level horizontal overflow.
 
 | ID | Severity | Category | Finding |
 |---|---|---|---|
